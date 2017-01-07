@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+    <meta name="author" content="Tyr Chen">
+        <title>The Hitchhikers' Guide to Elixir First Impression</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+  <link rel="stylesheet" href="custom/slides.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+        </head>
+
+<body class="shower list">
+	<header class="caption">
+		<h1>The Hitchhikers' Guide to Elixir<br/>First Impression</h1>
+            <p class="author">Tyr Chen</p>
+    	</header>
+	<section class="slide" id="cover">
+		<h2>The Hitchhikers' Guide to Elixir<br/>First Impression</h2>
+		<p>Brought to you by <a href="https://github.com/tyrchen">Tyr Chen</a></p>
+    <img src="images/cover.jpg" alt="" class="cover">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+			#cover h2 {
+				margin:150px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+        border-bottom: 0px;
+			}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+			}
+			#cover p a {
+			  color:#FFF;
+			}
+		</style>
+	</section>
+	<section id="what-is-elixir" class="level2 slide">
+<h2>What is Elixir?</h2>
+<blockquote>
+<p>Elixir is a dynamic, functional language designed for building scalable and maintainable applications.</p>
+<p>Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, while also being successfully used in web development and the embedded software domain.</p>
+</blockquote>
+</section>
+<section id="installation" class="level2 slide">
+<h2>Installation</h2>
+<p>OSX</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">brew</span> install elixir</code></pre></div>
+<p>Ubuntu</p>
+<pre><code>$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb &amp;&amp; sudo dpkg -i erlang-solutions_1.0_all.deb
+$ sudo apt-get update</code></pre>
+<p>Windows: <a href="https://repo.hex.pm/elixir-websetup.exe">download</a>(but, are you serious?)</p>
+</section>
+<section id="get-your-hands-wet" class="level2 slide">
+<h2>Get your hands wet</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">mix</span> new first_impression
+<span class="kw">*</span> creating README.md
+<span class="kw">...</span>
+<span class="kw">*</span> creating test/first_impression_test.exs
+
+<span class="kw">Your</span> Mix project was created successfully.
+<span class="kw">You</span> can use <span class="st">&quot;mix&quot;</span> to compile it, test it, and more:
+
+    <span class="kw">cd</span> first_impression 
+    <span class="kw">mix</span> test
+
+<span class="kw">Run</span> <span class="st">&quot;mix help&quot;</span> for more commands.</code></pre></div>
+</section>
+<section id="iex" class="level2 slide">
+<h2>iex</h2>
+<pre><code>$ iex -S mix
+Erlang/OTP 19 [erts-8.2] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Compiling 1 file (.ex)
+Generated first_impression app
+Interactive Elixir (1.4.0) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)&gt; h()</code></pre>
+<p>Congratulations! Now you entered a shell for a whole new OS - erlang VM!</p>
+</section>
+<section id="basic-concepts" class="level2 slide">
+<h2>Basic concepts</h2>
+<ul>
+<li>erlang VM</li>
+<li>Pattern matching</li>
+<li>Macros and metaprogramming</li>
+<li>process, port, node</li>
+</ul>
+</section>
+<section id="observer" class="level2 slide">
+<h2>Observer</h2>
+<figure>
+<img src="images/s1/observer.jpg" />
+</figure>
+</section>
+
+  <section class="slide shout" id="thanks">
+		<h2>Thanks & questions?</h2>
+		<img src="images/cover.jpg" alt="" class="cover">
+		<style>
+			#thanks h2 {
+        color:#FFF;
+				text-align:center;
+				font-size:70px;
+			}
+		</style>
+	</section>
+
+	<p class="badge">
+		<a href="https://github.com/tyrchen/">Follow me on GitHub</a>
+	</p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+</body>
+</html>

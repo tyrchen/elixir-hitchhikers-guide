@@ -1,0 +1,70 @@
+.slide {
+  padding: 0 0 0 0;
+}
+
+.slide.bg {
+  background: url(../images/cover.jpg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.slide > *, .slide * > li {
+  margin: 0 30px;
+}
+
+.slide > img {
+  margin: 0px;
+}
+
+.slide > blockquote {
+  margin: 100px;
+}
+
+.slide h2 {
+  padding-top: 26px;
+  padding-bottom: 34px;
+  margin-bottom: 10px;
+  color: #585a5e;
+  border-bottom: 1px solid #585a5e;
+}
+
+.slide figure {
+  height: 500px;
+  position: relative;
+}
+.slide > figure > img {
+  height: 500px;
+  margin: 0;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide.shout h2 {
+  padding: 0;
+  margin: 0;
+  border-bottom: 0px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 60px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+code{
+  white-space: pre;
+}
+
+.slide pre code {
+  font-size: 18px;
+  line-height: 1.5;
+}
