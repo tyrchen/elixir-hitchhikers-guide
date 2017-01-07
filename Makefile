@@ -33,4 +33,8 @@ mv:
 	@mv ~/snapshots/snapshot\ $(shell date +'%Y-%m-%d\ at\%l.%M')*.jpg $(ASSETS)/images/$(TARGET)
 	@sips -Z 1600 $(ASSETS)/images/$(TARGET)
 
+gh-pages: build
+	@echo push to git pages.
+	@cd _build; git add . && git commit -a -m "generated new pages." && git push origin gh-pages; cd ..
+
 .PHONY: build copy-assets watch
