@@ -34,7 +34,9 @@
 
 * E1: naming and linking
 * E2: monitoring
-* E3: gproc / registry
+* E3: gproc
+* E4: Registry (introduced in 1.4)
+* E5: Project 3
 
 
 ## Season 4: The OTP Awakens {.slide}
@@ -44,8 +46,23 @@
 * E3: GenServer: Deep dive
 * E4: Supervisor
 * E5: GenEvent
-* E6: Project 4:
+* E6: Project 4
 
-# Season 5: Mix {.slide}
+## Season 5: The Revenge of Missing Pieces {.slide}
 
-* [E2: Breaking system to black boxes](s2-e2-breaking-system-to-black-boxes.html)
+* E1: Mix and Hex
+* [E2: Umbrella projects: Breaking system to black boxes](s2-e2-breaking-system-to-black-boxes.html)
+* E3: Compile, static analysis
+* E4: Releases
+* E5: Logging and debugging
+* E6: Project 5
+
+## Season 6: Building small OTP applications {.slide}
+
+## Season 7: Ecto {.slide}
+
+## Season 8: Plug {.slide}
+
+## Season 9: Building intermediate OTP applications {.slide}
+
+## Season 10: Phoenix {.slide}
